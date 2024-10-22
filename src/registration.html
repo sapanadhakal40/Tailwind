@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body class="min-h-screen relative">
+    <div class="absolute inset-0 bg-cover bg-center filter blur-md -z-10"
+        style="background-image:url('./image/furniture_3.jpg');">
+    </div>
+
+    <div class="min-h-screen  bg-opacity-60 flex items-center justify-center">
+        <div
+            class="bg-white w-3/4 lg:w-2/3 xl:w-1/2 shadow-lg rounded-lg grid grid-cols-1 md:grid-cols-2 overflow-hidden">
+
+            <!-- left side -->
+            <div class="relative hidden md:block">
+                <div class="absolute inset-0 bg-cover bg-center"
+                    style="background-image: url('./image/furniture_3.jpg');">
+                </div>
+                <div
+                    class="relative z-10 flex flex-col items-center justify-center text-white p-6 bg-black bg-opacity-50 h-full">
+                    <h1 class="text-4xl font-sans">Welcome.</h1>
+                    <p class="mt-4 italic text-center">To keep connected with us please register with your personal
+                        info.</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- right side -->
+            <div class=" p-8">
+                <h2 class="text-3xl font-semibold mb-4">Register</h2>
+                <p class="mb-3 text-gray-600">Don't have an account? <a href="#"
+                        class="text-blue underline  hover:text-black ">Create
+                        your
+                        account</a>, it takes less than a minute.</p>
+
+
+                <form class="w-full max-w-sm mx-auto">
+                    <div class="mb-2">
+                        <label for="name" class="block text-sm font-medium text-gray-dark">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="mt-1 block w-full border border-gray-light rounded-md p-1.5 focus:ring-blue focus:border-blue">
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="block text-sm font-medium text-gray-dark">Email ID</label>
+                        <input type="email" id="email" name="email"
+                            class="mt-1 block w-full border border-gray-light rounded-md p-1.5 focus:ring-blue focus:border-blue">
+                    </div>
+                    <div class="mb-2">
+                        <label for="phone" class="block text-sm font-medium text-gray-dark">Phone No</label>
+                        <input type="text" id="phone" name="phone"
+                            class="mt-1 block w-full border border-gray-light rounded-md p-1.5 focus:ring-blue focus:border-blue">
+                    </div>
+                    <div class="mb-2">
+                        <label for="password" class="block text-sm font-medium text-gray-dark">Password</label>
+                        <input type="password" id="password" name="password"
+                            class="mt-1 block w-full border border-gray-light rounded-md p-1.5 focus:ring-blue focus:border-blue">
+                    </div>
+                    <div class="mb-4 flex items-center">
+                        <input type="checkbox" id="terms" name="terms" class="h-4 w-4 text-blue border-gray rounded">
+                        <label for="terms" class="ml-2 block text-sm text-gray-dark">I accept the <a href="#"
+                                class="text-blue hover:text-black">terms and conditions</a> & <a href="#"
+                                class="text-blue  hover:text-black"> privacy
+                                policy </a></label>
+                    </div>
+                    <button type="submit"
+                        class="w-full font-semibold py-2 rounded-md shadow bg-gray-dark text-white hover:bg-green">Register</button>
+                </form>
+
+                <!-- Social Media Login -->
+                <div class="mt-8 flex justify-center">
+                    <p class="text-gray-500 text-sm">Or login with social media</p>
+                </div>
+                <div class="mt-4 flex justify-center space-x-4">
+                    <a href="#"
+                        class="relative group bg-blue-dark text-white rounded-full  px-4 py-2 transition duration-300"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i>
+                        <span
+                            class="absolute bottom-full mb-2 hidden group-hover:block bg-black text-white text-xs rounded py-1 px-2">Facebook</span>
+                    </a>
+                    <a href="#" class="relative group bg-blue text-white rounded-full px-3 py-2 transition duration-300"
+                        aria-label="Twitter"><i class="fab fa-twitter"></i>
+                        <span
+                            class="absolute bottom-full mb-2 hidden group-hover:block bg-black text-white text-xs rounded py-1 px-2">Twitter</span>
+                    </a>
+                    <a href="#" class="relative group bg-red text-white rounded-full px-3 py-2"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i>
+                        <span
+                            class="absolute bottom-full mb-2 hidden group-hover:block bg-black text-white text-xs rounded py-1 px-2">Instagram</span>
+                    </a>
+                </div>
+                <div class="mt-5 text-center">
+                    <p class="text-sm text-gray-dark">Already have an account? <a href="login.html"
+                            class="text-blue  underline hover:text-slate-800">Login</a></p>
+                </div>
+            </div>
+
+
+</body>
+
+</html>
