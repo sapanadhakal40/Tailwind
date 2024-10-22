@@ -29,7 +29,7 @@ themeToggle.addEventListener('click', () => {
         themeIcon.classList.add('fa-sun'); // Switch to sun icon for light mode
     } else {
         themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon'); // Switch to moon icon for dark mode
+        themeIcon.classList.add('fa-moon'); // Switch to the moon icon for dark mode
     }
 });
 
