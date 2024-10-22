@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Custom CSS Variables */
+:root {
+    --text-color: #333333;
+    --background-color: #ffffff;
+}
+
+body.dark {
+    --text-color: #f5f5f5;
+    --background-color: #1a1a1a;
+}
