@@ -16,11 +16,11 @@
 <body>
 
     <body class="font-poppins">
-        <header class="bg-black text-white shadow-md">
+        <header class="bg-white text-black dark:bg-black dark:text-white shadow-md">
             <nav class=" container mx-auto p-4 flex justify-between items-center">
                 <h1 class="text-xl font-bold ">Star Woodshop</h1>
 
-                <button class="md:hidden text-white focus:outline-none" id="nav-toggle">
+                <button class="md:hidden text-black dark:text-white focus:outline-none" id="nav-toggle">
                     <i class="fas fa-bars menu-icon text-xl"></i>
                 </button>
 
@@ -31,7 +31,7 @@
                             <i class="fas fa-chevron-down ml-1"></i>
                         </a>
                         <ul
-                            class="dropdown-content absolute hidden bg-black text-white shadow-lg rounded-lg p-2  group-hover:block z-10">
+                            class="dropdown-content absolute hidden  bg-white dark:bg-black text-white shadow-lg rounded-lg p-2  group-hover:block z-10">
                             <li><a href="#living"
                                     class="block px-4 py-2 text-gray-dark hover:bg-gray-light rounded  ">Living </a>
                             </li>
@@ -46,7 +46,9 @@
                     <li><a href="#about" class=" hover:text-gray-light">About Us</a></li>
                     <li><a href="#contact" class=" hover:text-gray-light">Contact</a></li>
                 </ul>
-
+                <button id="theme-toggle" class="text-xl focus:outline-none">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
                 <!-- Mobile Menu -->
 
                 <ul class="absolute top-14 left-0 w-full bg-black text-white shadow-lg  space-y-3 flex flex-col items-center justify-center md:hidden   z-10"
@@ -61,13 +63,13 @@
                         <ul class=" hidden flex-col bg-black text-white shadow-lg rounded-lg p-2 "
                             id="mobile-products-dropdown">
                             <li><a href="#living"
-                                    class="block px-4 py-2 text-gray-light hover:bg-gray-100 rounded">Living</a></li>
+                                    class="block px-4 py-2 text-gray-light hover:bg-gray-dark rounded">Living</a></li>
                             <li><a href="#kitchen"
-                                    class="block px-4 py-2 text-gray-light hover:bg-gray-100 rounded">Kitchen</a></li>
+                                    class="block px-4 py-2 text-gray-light hover:bg-gray-dark rounded">Kitchen</a></li>
                             <li><a href="#balcony"
-                                    class="block px-4 py-2 text-gray-light hover:bg-gray-100 rounded">Balcony</a></li>
+                                    class="block px-4 py-2 text-gray-light hover:bg-gray-dark rounded">Balcony</a></li>
                             <li><a href="#bedroom"
-                                    class="block px-4 py-2 text-gray-light hover:bg-gray-100 rounded">Bedroom</a></li>
+                                    class="block px-4 py-2 text-gray-light hover:bg-gray-dark rounded">Bedroom</a></li>
                         </ul>
                     </li>
                     <li><a href="#about" class="block text-white">About Us</a></li>
@@ -75,9 +77,10 @@
                 </ul>
             </nav>
         </header>
+        <!-- Hero Section  -->
         <section
-            class="relative bg-[url('image/Gold-furniture.jpg')] bg-cover bg-center h-screen flex items-center justify-center text-white">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            class="relative bg-[url('image/Gold-furniture.jpg')] bg-cover bg-center h-[50vh] flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
             <div class="relative z-20 text-center text-white">
                 <h1 class="text-5xl font-bold mb-4">Welcome to Star Woodshop</h1>
                 <p class="text-lg mb-8">Your one-stop shop for quality furniture</p>
@@ -86,8 +89,84 @@
                 </a>
             </div>
         </section>
-        < <script src="script.js">
-            </script>
+
+        <!-- About Us Section  -->
+        <section id="about" class="bg-white dark:bg-slate-900 py-10 px-4">
+            <div class="container mx-auto bg-gray-light dark:bg-slate-800 shadow-lg p-8 rounded-lg">
+                <article class="about-description text-center mb-10 ">
+                    <h2 class="text-2xl font-bold mb-4 text-black dark:text-white">About Us</h2>
+                    <p class="text-lg text-black dark:text-white ">At Star Woodshop, we create high-quality, handcrafted
+                        furniture designed to elevate any space. Our passion for craftsmanship and attention to detail
+                        ensures each piece is both beautiful and built to last. From custom woodwork to timeless
+                        collections, we bring style and functionality together.</p>
+                </article>
+                <div class="flex flex-col md:flex-row md:space-x-6">
+                    <article class="about-item mb-8 md:mb-0 ">
+                        <h3 class="text-xl font-semibold text-black dark:text-white mb-3">Our History</h3>
+                        <p class="text-black dark:text-white">
+                            Founded in 2000, Star Woodshop started as a small family business with a deep love for
+                            woodworking. Over the years, we’ve grown into a trusted name in furniture, known for our
+                            commitment to quality and craftsmanship
+                        </p>
+                    </article>
+
+                    <article class="about-item">
+                        <h3 class="text-xl font-semibold text-black dark:text-white mb-3">Our Mission</h3>
+                        <p class="text-black dark:text-white">
+                            Our mission is to craft beautiful, durable furniture that brings comfort and style to your
+                            home. We prioritize sustainability and customer satisfaction, creating pieces that are meant
+                            to be cherished for years to come.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="bg-white text-black dark:bg-black dark:text-white py-8 border border-gray-light ">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+                <div>
+                    <h2 class="font-bold text-lg mb-4">Star Woodshop</h2>
+                    <!-- <img src="https://via.placeholder.com/150x50" alt="Company Logo" class="mb-4"> -->
+                    <p class="text-sm">
+                        12 E Leppävaarankatu <br> 02650 Espoo<br> Finland
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray">Home</a></li>
+                        <li><a href="#" class="hover:text-gray">Products</a></li>
+                        <li><a href="#" class="hover:text-gray">About Us</a></li>
+                        <li><a href="#" class="hover:text-gray">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Get in Touch</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray">Contact us</a></li>
+                        <li><a href="#" class="hover:text-gray">Join us</a></li>
+                    </ul>
+                </div>
+                <div class="flex space-x-4  ">
+                    <a href="#" class="text-gray-light hover:text-black dark:hover:text-gray"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-light hover:text-black dark:hover:text-gray "><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-light hover:text-black dark:hover:text-gray"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-light hover:text-black dark:hover:text-gray"><i
+                            class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <div class="text-center text-sm text-black dark:text-white mt-8">
+                © 2024 Company Name. All rights reserved. <a href="#" class="hover:text-gray-light">Privacy
+                    Policy</a>
+            </div>
+        </footer>
+
+        <script src="script.js">
+        </script>
     </body>
 
 
