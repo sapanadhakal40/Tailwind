@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="min-h-screen relative">
+    <div class="absolute inset-0 bg-cover bg-center filter blur-md -z-10"
+        style="background-image:url('./image/furniture_1.webp');">
+    </div>
+
+    <div class="min-h-screen  bg-opacity-50 flex items-center justify-center">
+        <div
+            class="bg-white w-3/4 lg:w-2/3 xl:w-1/2 shadow-lg rounded-lg grid grid-cols-1 md:grid-cols-2 overflow-hidden h-full">
+
+            <!-- left side -->
+            <div class="flex items-center justify-center p-6 h-full">
+                <div class="w-full max-w-md">
+                    <h2 class="text-2xl font-semibold mb-6 ">Login</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-dark">Email ID</label>
+                            <input type="email" id="email" name="email"
+                                class="mt-1 block w-full border border-gray-light rounded-md p-2 focus:ring-blue focus:border-blue">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="block text-sm font-medium text-gray-dark">Password</label>
+                            <input type="password" id="password" name="password"
+                                class="mt-1 block w-full border border-gray-light rounded-md p-2 focus:ring-blue focus:border-blue">
+                        </div>
+                        <button type="submit"
+                            class="w-full  bg-gray-dark hover:bg-green text-white font-semibold py-2 rounded-md shadow  ">Login</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- right side -->
+
+            <div class="relative hidden md:block">
+                <div class="absolute inset-0 bg-cover bg-center"
+                    style="background-image: url('./image/furniture_1.webp');">
+                </div>
+                <div
+                    class="relative z-10 flex flex-col items-center justify-center text-white p-6 bg-black bg-opacity-50 h-full">
+                    <h1 class="text-4xl font-sans">Welcome Back.</h1>
+                    <p class="mt-4 italic text-center">To keep connected with us please login with your personal
+                        info.</p>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+
+
+</html>
