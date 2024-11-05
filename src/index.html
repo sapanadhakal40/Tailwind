@@ -31,49 +31,90 @@
                             <i class="fas fa-chevron-down ml-1"></i>
                         </a>
                         <ul
-                            class="dropdown-content absolute hidden  bg-white dark:bg-black text-white shadow-lg rounded-lg p-2  group-hover:block z-10">
+                            class="dropdown-content absolute hidden  bg-white dark:bg-black text-white shadow-lg rounded-lg p-2 bg-opacity-90 dark:bg-opacity-90 group-hover:block z-50">
                             <li><a href="#living"
-                                    class="block px-4 py-2 text-gray-dark hover:bg-gray-light rounded  ">Living </a>
+                                    class="block px-4 py-2 text-gray-dark hover:bg-gray-light dark:text-white rounded  ">Living
+                                </a>
                             </li>
                             <li><a href="#kitchen"
-                                    class="block px-4 py-2 text-gray-dark hover:bg-gray-light rounded">Kitchen</a></li>
+                                    class="block px-4 py-2 text-gray-dark hover:bg-gray-light dark:text-white rounded">Kitchen</a>
+                            </li>
                             <li><a href="#balcony"
-                                    class="block px-4 py-2 text-gray-dark hover:bg-gray-light rounded">Balcony</a></li>
+                                    class="block px-4 py-2 text-gray-dark hover:bg-gray-light dark:text-white rounded">Balcony</a>
+                            </li>
                             <li><a href="#bedroom"
-                                    class="block px-4 py-2 text-gray-dark hover:bg-gray-light rounded">Bedroom</a></li>
+                                    class="block px-4 py-2 text-gray-dark hover:bg-gray-light dark:text-white rounded">Bedroom</a>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="#about" class=" hover:text-gray-light">About Us</a></li>
                     <li><a href="#contact" class=" hover:text-gray-light">Contact</a></li>
+                    <!-- <li><a href="registration.html"
+                            class="bg-gray-light text-black hover:bg-gray-dark  hover:text-white dark:bg-slate-700 dark:text-white dark:hover:bg-slate-400   ml-24 px-4 py-2 rounded">Register</a>
+                    </li> -->
                 </ul>
-                <button id="theme-toggle" class="text-xl focus:outline-none">
-                    <i id="theme-icon" class="fas fa-moon"></i>
-                </button>
+
+                </div>
+
+                <div class="relative flex items-center space-x-6 ">
+                    <button id="theme-toggle" class="text-xl focus:outline-none">
+                        <i id="theme-icon" class="fas fa-moon"></i>
+                    </button>
+                    <div class="relative ">
+
+                        <button class="flex items-center focus:outline-none" id="user-menu-button"
+                            aria-label="User menu">
+                            <!-- User Icon -->
+                            <i class="fas fa-user-circle text-2xl text-black dark:text-white "></i>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="user-dropdown"
+                            class="hidden absolute right-0 mt-2 w-48 bg-white dark:bg-black shadow-lg rounded-lg py-2 z-20">
+
+                            <a href="login.html"
+                                class="block px-4 py-2 text-gray-dark  dark:text-white hover:bg-gray-light dark:hover:bg-gray-dark">
+                                Login</a>
+
+                            <a href="registration.html"
+                                class="block px-4 py-2 text-gray-dark dark:text-white hover:bg-gray-light dark:hover:bg-gray-dark">Register</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
                 <!-- Mobile Menu -->
 
-                <ul class="absolute top-14 left-0 w-full bg-black text-white shadow-lg  space-y-3 flex flex-col items-center justify-center md:hidden   z-10"
+                <ul class="absolute top-14 left-0 w-full bg-white text-black dark:bg-black dark:text-white shadow-lg  space-y-3 flex flex-col items-center justify-center md:hidden z-30"
                     id="mobile-menu">
-                    <li><a href="#home" class="block text-white ">Home</a></li>
-                    <li class="relative">
-                        <a href="#products" class="flex items-center text-gray-light"
+                    <li><a href="#home" class="block  hover:bg-gray-light ">Home</a></li>
+                    <li class="relative ">
+                        <a href="#products" class="flex items-center  hover:bg-gray-light "
                             id="products-toggle-mobile">Products
                             <i class="fas fa-chevron-down ml-2"></i>
                         </a>
 
-                        <ul class=" hidden flex-col bg-black text-white shadow-lg rounded-lg p-2 "
+                        <ul class=" hidden flex-col bg-white text-black  dark:bg-black dark:text-white shadow-lg rounded-lg p-2 "
                             id="mobile-products-dropdown">
                             <li><a href="#living"
-                                    class="block px-4 py-2 text-gray-light hover:bg-gray-dark rounded">Living</a></li>
+                                    class="block px-4 py-2  text-gray-dark hover:bg-gray-light hover:text-black dark:text-white rounded">Living</a>
+                            </li>
                             <li><a href="#kitchen"
-                                    class="block px-4 py-2 text-gray-light hover:bg-gray-dark rounded">Kitchen</a></li>
+                                    class="block px-4 py-2 text-gray-dark hover:bg-gray-light  hover:text-black dark:text-white rounded">Kitchen</a>
+                            </li>
                             <li><a href="#balcony"
-                                    class="block px-4 py-2 text-gray-light hover:bg-gray-dark rounded">Balcony</a></li>
+                                    class="block px-4 py-2  text-gray-dark hover:bg-gray-light  hover:text-black dark:text-white rounded">Balcony</a>
+                            </li>
                             <li><a href="#bedroom"
-                                    class="block px-4 py-2 text-gray-light hover:bg-gray-dark rounded">Bedroom</a></li>
+                                    class="block px-4 py-2  text-gray-dark hover:bg-gray-light  hover:text-black dark:text-white rounded">Bedroom</a>
+                            </li>
                         </ul>
                     </li>
-                    <li><a href="#about" class="block text-white">About Us</a></li>
-                    <li><a href="#contact" class="block text-white">Contact</a></li>
+                    <li><a href="#about" class="block  hover:text-gray-light">About Us</a></li>
+                    <li><a href="#contact" class="block  hover:text-gray-light">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -82,39 +123,223 @@
             class="relative bg-[url('image/Gold-furniture.jpg')] bg-cover bg-center h-[50vh] flex items-center justify-center text-white">
             <div class="absolute inset-0 bg-black opacity-60"></div>
             <div class="relative z-20 text-center text-white">
-                <h1 class="text-5xl font-bold mb-4">Welcome to Star Woodshop</h1>
-                <p class="text-lg mb-8">Your one-stop shop for quality furniture</p>
-                <a href="#products" class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded">
-                    Shop Now
+                <h1 class="text-2xl lg:text-5xl font-bold mb-4">Welcome to Star Woodshop</h1>
+                <p class=" text-md lg:text-lg mb-6">Your one-stop shop for quality furniture</p>
+                <a href="#products"
+                    class="bg-gray-light text-black hover:bg-gray-dark  hover:text-white dark:bg-slate-700 dark:text-white dark:hover:bg-slate-400  font-semibold py-2 px-4 rounded">
+                    Shop now</a>
                 </a>
             </div>
         </section>
 
+
+
+
+
+        <!--example of categories array-->
+        <section class="p-8 bg-white shadow-lg">
+            <div class="flex justify-between items-center p-2">
+                <h1 class="text-xl font-semibold mb-4">Categories</h1>
+
+                <div class="flex flex-wrap space-x-4 items-center
+                    justify-center md:justify-start ">
+                    <button class="border border-gray-light px-4 py-2 rounded-full hover:bg-gray-light ">Best
+                        Seller</button>
+
+                    <div id="category-links" class="flex flex-wrap space-x-4 items-center">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!--category Section-->
+
+
+
+        <section class="p-6 bg-gray-light">
+            <div class="container mx-auto">
+                <div id="card-container" class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Card 1: Table -->
+        <!--<div class=" bg-white shadow-lg rounded-lg overflow-hidden p-6">
+                    <img src="./image/table_1.jpg" alt=" Tables" class="w-full h-40 object-cover">
+                    <div class="text-center mt-4">
+                        <h3 class="text-lg font-semibold">Tables</h3>
+                        <a href="#tables" class="block mt-2 text-gray hover:text-gray-dark">See More</a>
+                    </div>
+                </div>-->
+
+        <!-- Card 2: bed -->
+        <!--<div class="bg-white shadow-lg rounded-lg overflow-hidden p-6">
+                        <img src="./image/bed_5.webp" alt="bed" class="w-full h-40 object-cover">
+                        <div class="text-center mt-4">
+                            <h3 class="text-lg font-semibold">Bed</h3>
+                            <a href="#bed" class="block mt-2 text-gray hover:text-gray-dark">See More</a>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden p-6">
+                        <img src="./image/wooden_sofa_1.jpg" alt="Sofa" class="w-full h-40 object-cover">
+                        <div class="text-center mt-4">
+                            <h3 class="text-lg font-semibold">Sofa</h3>
+                            <a href="#sofa" class="block mt-2 text-gray hover:text-gray-dark">See More</a>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden p-6">
+                        <img src="./image/dining_1.jpg" alt="dinning set" class="w-full h-40 object-cover">
+                        <div class="text-center mt-4">
+                            <h3 class="text-lg font-semibold">Dinning Set</h3>
+                            <a href="#dinningset" class="block mt-2 text-gray hover:text-gray-dark">See More</a>
+                        </div>
+                    </div> -->
+
+        </ <!-- Product Grid -->
+        <section class="p-4">
+            <div class="container mx-auto p-2">
+                <h2 class="text-2xl font-semibold text-left mb-6">Our Products</h2>
+
+
+                <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-4  ">
+
+
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white shadow-lg rounded-lg overflow-hidden  max-w-xs transition-transform duration-500 ease-in-out hover:scale-105">
+                        <img src="./image/chair_1.webp" alt="Fabric Chair" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Fabric Chair</h3>
+                            <div class="flex justify-between items-center mt-2">
+                                <p class="text-black font-bold">$95.00</p>
+                            </div>
+                            <button
+                                class="add-to-cart-btn mt-4 p-2 w-fit flex items-center  hover:bg-gray-light rounded-full text-gray"
+                                data-product-name="Fabric Chair" data-price="95">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h18l-1 13H4L3 3zM8 10h2M8 6h8m2 0v2m-6 0h2" />
+                                </svg>
+                                <span class="ml-2">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-lg overflow-hidden  max-w-xs transition-transform duration-500 ease-in-out hover:scale-105">
+                        <img src="./image/chair_4.jpg" alt="Wood Chair" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Wood Chair</h3>
+                            <div class="flex justify-between items-center mt-2">
+                                <p class="text-black font-bold">$100.00</p>
+                            </div>
+                            <button
+                                class="add-to-cart-btn mt-4 p-2 w-fit flex items-center hover:bg-gray-light rounded-full text-gray"
+                                data-product-name="Fabric Chair" data-price="95">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h18l-1 13H4L3 3zM8 10h2M8 6h8m2 0v2m-6 0h2" />
+                                </svg>
+                                <span class="ml-2">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-lg overflow-hidden max-w-xs transition-transform duration-500 ease-in-out hover:scale-105">
+                        <img src="./image/chair_3.webp" alt="Fabric Chair" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Fabric Chair</h3>
+                            <div class="flex justify-between items-center mt-2">
+                                <p class="text-black font-bold">$85.00</p>
+                            </div>
+                            <button
+                                class="add-to-cart-btn mt-4 p-2 w-fit flex items-center  hover:bg-gray-light rounded-full text-gray"
+                                data-product-name="Fabric Chair" data-price="95">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h18l-1 13H4L3 3zM8 10h2M8 6h8m2 0v2m-6 0h2" />
+                                </svg>
+                                <span class="ml-2">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-lg overflow-hidden  max-w-xs transition-transform duration-500 ease-in-out hover:scale-105 ">
+                        <img src="./image/w_chair.jpg" alt="Wood Chair" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Wood Chair</h3>
+                            <div class="flex justify-between items-center mt-2">
+                                <p class="text-black font-bold">$95.00</p>
+                            </div>
+                            <button
+                                class="add-to-cart-btn mt-4 p-2 w-fit flex items-center  hover:bg-gray-light rounded-full text-gray"
+                                data-product-name="Fabric Chair" data-price="95">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h18l-1 13H4L3 3zM8 10h2M8 6h8m2 0v2m-6 0h2" />
+                                </svg>
+                                <span class="ml-2">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
         <!-- About Us Section  -->
-        <section id="about" class="bg-white dark:bg-slate-900 py-10 px-4">
-            <div class="container mx-auto bg-gray-light dark:bg-slate-800 shadow-lg p-8 rounded-lg">
-                <article class="about-description text-center mb-10 ">
-                    <h2 class="text-2xl font-bold mb-4 text-black dark:text-white">About Us</h2>
-                    <p class="text-lg text-black dark:text-white ">At Star Woodshop, we create high-quality, handcrafted
-                        furniture designed to elevate any space. Our passion for craftsmanship and attention to detail
+        <section class="about-section bg-white dark:bg-slate-900 py-10 px-4">
+            <div class="container mx-auto  dark:bg-slate-900 shadow-lg p-8 rounded-lg">
+                <article class=" text-center mb-10 ">
+                    <h2 class="text-3xl font-semibold mb-4 text-black dark:text-white">About Us</h2>
+                    <p class="text-lg text-black dark:text-white ">At Star Woodshop, we create high-quality,
+                        handcrafted
+                        furniture designed to elevate any space. Our passion for craftsmanship and attention to
+                        detail
                         ensures each piece is both beautiful and built to last. From custom woodwork to timeless
                         collections, we bring style and functionality together.</p>
                 </article>
-                <div class="flex flex-col md:flex-row md:space-x-6">
-                    <article class="about-item mb-8 md:mb-0 ">
+                <div class="flex flex-col md:flex-row md:space-x-6 ">
+                    <article
+                        class="about-item mb-8 md:mb-0 p-6 rounded-lg shadow-lg  dark:bg-slate-800 transition-transform duration-500 ease-in-out hover:scale-105">
                         <h3 class="text-xl font-semibold text-black dark:text-white mb-3">Our History</h3>
                         <p class="text-black dark:text-white">
-                            Founded in 2000, Star Woodshop started as a small family business with a deep love for
-                            woodworking. Over the years, we’ve grown into a trusted name in furniture, known for our
+                            Founded in 2000, Star Woodshop started as a small family business with a deep love
+                            for
+                            woodworking. Over the years, we’ve grown into a trusted name in furniture, known for
+                            our
                             commitment to quality and craftsmanship
                         </p>
                     </article>
 
-                    <article class="about-item">
+                    <article
+                        class="about-item p-6 rounded-lg shadow-lg dark:bg-slate-800 transition-transform duration-500 ease-in-out  hover:scale-105">
                         <h3 class="text-xl font-semibold text-black dark:text-white mb-3">Our Mission</h3>
                         <p class="text-black dark:text-white">
-                            Our mission is to craft beautiful, durable furniture that brings comfort and style to your
-                            home. We prioritize sustainability and customer satisfaction, creating pieces that are meant
+                            Our mission is to craft beautiful, durable furniture that brings comfort and style
+                            to
+                            your
+                            home. We prioritize sustainability and customer satisfaction, creating pieces that
+                            are
+                            meant
                             to be cherished for years to come.
                         </p>
                     </article>
@@ -123,11 +348,91 @@
             </div>
         </section>
 
+        <!-- Why Us Section -->
+        <section class="p-8 bg-gray-100 bg-white dark:bg-slate-900 dark:text-white">
+            <h2 class="text-3xl font-semibold text-center mb-6">Why Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  dark:bg-slate-900">
+                <!-- High Quality -->
+                <div
+                    class="bg-white shadow-md rounded-lg p-6 text-center  dark:bg-slate-800 transition-transform duration-500 ease-in-out hover:scale-105">
+                    <h3 class="text-xl font-semibold mb-4">High Quality Products</h3>
+                    <p>We offer only the highest quality furniture made from durable materials to last for
+                        years.
+                    </p>
+                </div>
+
+                <!-- Affordable Prices -->
+                <div
+                    class="bg-white shadow-md rounded-lg p-6 text-center  dark:bg-slate-800 transition-transform duration-500 ease-in-out hover:scale-105">
+                    <h3 class="text-xl font-semibold mb-4">Affordable Prices</h3>
+                    <p>Competitive pricing without compromising on quality, offering value for every budget.</p>
+                </div>
+
+                <!-- Delivery Option -->
+                <div
+                    class="bg-white shadow-md rounded-lg p-6 text-center  dark:bg-slate-800 transition-transform duration-500 ease-in-out hover:scale-105">
+                    <h3 class="text-xl font-semibold mb-4">Delivery Option</h3>
+                    <p>Convenient delivery options available to get your furniture right to your doorstep
+                        quickly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FAQ Section -->
+        <section class="p-8 bg-white dark:bg-slate-900 dark:text-white ">
+            <h2 class="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-6 max-w-3xl mx-auto  dark:bg-slate-800">
+
+                <!-- FAQ Item 1 -->
+                <div
+                    class="bg-white shadow-md rounded-lg overflow-hidden  dark:bg-slate-800 transition-transform duration-500 ease-in-out hover:scale-105">
+                    <button onclick="toggleFAQ(1)"
+                        class="w-full text-left p-4 text-xl font-semibold focus:outline-none flex justify-between">
+                        What is the return policy?
+                        <span id="icon1" class="transition-transform transform">+</span>
+                    </button>
+                    <div id="answer1" class="p-4 text-gray-700 hidden ">
+                        We offer a 30-day return policy for unused items in their original packaging.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    class="bg-white shadow-md rounded-lg overflow-hidden  dark:bg-slate-800 transition-transform duration-500 ease-in-out hover:scale-105">
+                    <button onclick="toggleFAQ(2)"
+                        class="w-full text-left p-4 text-xl font-semibold focus:outline-none flex justify-between">
+                        Do you offer installation services?
+                        <span id="icon2" class="transition-transform transform">+</span>
+                    </button>
+                    <div id="answer2" class="p-4 text-gray-700 hidden">
+                        Yes, installation is available for certain products. Contact us for details.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    class="bg-white shadow-md rounded-lg overflow-hidden  dark:bg-slate-800 transition-transform duration-500 ease-in-out hover:scale-105">
+                    <button onclick="toggleFAQ(3)"
+                        class="w-full text-left p-4 text-xl font-semibold focus:outline-none flex justify-between">
+                        How long does delivery take?
+                        <span id="icon3" class="transition-transform transform">+</span>
+                    </button>
+                    <div id="answer3" class="p-4 text-gray-700 hidden">
+                        Delivery typically takes 2-3 business days, depending on your location.
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer class="bg-white text-black dark:bg-black dark:text-white py-8 border border-gray-light ">
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
                 <div>
                     <h2 class="font-bold text-lg mb-4">Star Woodshop</h2>
                     <!-- <img src="https://via.placeholder.com/150x50" alt="Company Logo" class="mb-4"> -->
+
                     <p class="text-sm">
                         12 E Leppävaarankatu <br> 02650 Espoo<br> Finland
                     </p>
@@ -167,7 +472,7 @@
 
         <script src="script.js">
         </script>
-    </body>in
+    </body>
 
 
 </html>
